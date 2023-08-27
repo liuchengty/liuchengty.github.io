@@ -122,73 +122,63 @@
 
 
     <main class="container">
-        <!-- 归档页面 -->
+        <!-- 某标签对应的所有post -->
 <div class="row pt-1">
-    <div class="col-md-2 d-none d-sm-none d-md-block markdown-section">
-        <!-- 侧边栏 分类 -->
-
-
-    </div>
-    <div class="col-md-8 markdown-section">
-
-        <p class="h2 border-bottom"><i class="p-1 fa fa-archive"></i>
-            <a href="/archives" class="link-dark text-decoration-none">
-                归档
-            </a>
-             
-        </p> 
-        <div class="tab-content">
-            <!-- 按照年份进行划分到map中再渲染 -->
-            
-            
-                <div class="pb-3">
-                    <h3 class="tag-hover"> 
-                        <a href="/archives/2023" class="link-dark text-decoration-none">
-                             2023
-                        </a>
-                    </h3>
-                    
-                    <li class="ps-3 p-1 tag-hover">
-                        <text class="text-secondary">
-                        2023/08/27 22:19
-                        </text> 
-                        <a href="/2023/08/27/English-newspaper-learning-1/ " class="link-dark text-decoration-none p-2">
-                            English newspaper learning 1
-                        </a>
-                    </li>
-                    
-                    <li class="ps-3 p-1 tag-hover">
-                        <text class="text-secondary">
-                        2023/08/26 22:06
-                        </text> 
-                        <a href="/2023/08/26/plan%20change/ " class="link-dark text-decoration-none p-2">
-                            plan change
-                        </a>
-                    </li>
-                    
-                    <li class="ps-3 p-1 tag-hover">
-                        <text class="text-secondary">
-                        2023/08/26 16:26
-                        </text> 
-                        <a href="/2023/08/26/All-start/ " class="link-dark text-decoration-none p-2">
-                            All start
-                        </a>
-                    </li>
-                    
-                    <li class="ps-3 p-1 tag-hover">
-                        <text class="text-secondary">
-                        2023/08/26 16:18
-                        </text> 
-                        <a href="/2023/08/26/hello-world/ " class="link-dark text-decoration-none p-2">
-                            Hello World
-                        </a>
-                    </li>
-                    
-                </div>
-            
+    <!-- sidebar -->
+    <div class="col-md-2 d-none d-sm-none d-md-block">
+        <div class="markdown-section">
+          
         </div>
-        
-        <!--  页码 -->
+    </div>
+    <!-- 文章 -->
+    <div id="blog-content" class="col-md-8 col-sm-12">
+        <p class="h3 border-bottom pb-2"><i class="p-1 fa fa-tag"></i>
+            learning,english
+        </p> 
+        <div class="markdown-section">
+            <div class="">
+                <!-- 主页 -->
+ 
+
+
+    <!-- 标题 -->
+    <div class="pb-4 tag-hover">
+        <p class="tag-hover h3">
+            <a href="/2023/08/26/plan%20change/" class="link-dark text-decoration-none title">
+                plan change 
+            </a>
+        </p>
+
+        <div class="pb-0">
+            <i class="fa fa-calendar p-1"></i>
+            2023/08/26 22:06:16 
+            
+
+            
+                <i class="fa fa-tag p-1"> </i>
+                <span class="tag-hover">
+                    
+                        <a href="/tags/learning-english/" class="link-dark text-decoration-none title"> 
+                            learning,english 
+                        </a>
+                    
+                </span>
+            
+
+        </div>
+
+        <div class="pt-3 pe-1">
+            <!-- 如果有摘要则显示摘要，没有就自己截取 -->
+            
+                <h2 id="New-ways…Read-the-newspaper"><a href="#New-ways…Read-the-newspaper" class="headerlink" title="New ways…Read the newspaper"></a>New ways…Read the newspaper</h2><p>Guys, I suddenly found a problem. That is, if you send this way to learn English every day, you will definitely not be able to learn it.<br>So I chose another way for you to learn by yourself.<del>Although I need to learn,too</del><br>And that is to……read the newspaper!<br>So I will upload newspapers or other English articles fr 
+             
+        </div>
+    </div>
+ 
+
+
+            </div>
+            <!--  页码 -->
 <nav class="pt-1 mt-1">
     <ul class="pagination justify-content-center new-pagination">
         <span class="page-number current">1</span>
@@ -197,39 +187,15 @@
 
 
  
-    </div>
-    <div class="col-md-2 d-none d-sm-none d-md-block markdown-section">
-        <!-- 侧边栏 标签 -->
-
-    <div class="card mb-3">
-        <div class="card-header card-header-dark">
-            <i class="fa fa-tag pe-2"></i> 标签
-        </div>
-        <div class="p-2">
-            
-            
-                <!-- 
-                    <a class="nav-link ps-3 border-bottom" aria-current="page" href="/tags/learning-english/">
-                        learning,english
-                        <span class="badge bg-secondary float-end me-2">1</span>
-                    </a>
-                 -->
-                <a class="" href="/tags/learning-english/">learning,english</a>
-            
-                <!-- 
-                    <a class="nav-link ps-3 border-bottom" aria-current="page" href="/tags/english-learning/">
-                        english,learning
-                        <span class="badge bg-secondary float-end me-2">1</span>
-                    </a>
-                 -->
-                <a class="" href="/tags/english-learning/">english,learning</a>
-            
         </div>
     </div>
-
+    <!-- sidebar -->
+    <div class="col-md-2  d-none d-sm-none d-md-block" id='blog-siderbar'>
+        <div class="markdown-section">
+           
+        </div>
     </div>
-</div>
- 
+</div> 
     </main>
 
     <!-- 底部栏 -->
